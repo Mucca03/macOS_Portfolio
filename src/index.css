@@ -115,7 +115,7 @@ body {
   }
 
   #window-header {
-    @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400;
+    @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-800 border-b border-gray-700 select-none text-sm text-gray-300;
   }
 
   #safari {
@@ -163,21 +163,21 @@ body {
   }
 
   #terminal {
-    @apply w-xl absolute top-32 left-1/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply w-xl absolute top-32 left-1/12 bg-gray-900 shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden border border-gray-700;
 
     h2 {
-      @apply font-bold text-sm text-center w-full;
+      @apply font-bold text-sm text-center w-full text-gray-200;
     }
 
     .techstack {
-      @apply text-sm font-roboto p-5;
+      @apply text-sm font-roboto p-5 bg-black/50 text-green-400;
 
       .label {
-        @apply flex items-center ms-10 mt-7;
+        @apply flex items-center ms-10 mt-7 text-green-400;
       }
 
       .content {
-        @apply py-5 my-5 border-y border-dashed space-y-1;
+        @apply py-5 my-5 border-y border-dashed border-green-900 space-y-1;
 
         li {
           .check {
@@ -189,7 +189,7 @@ body {
           }
 
           ul {
-            @apply flex items-center gap-3;
+            @apply flex items-center gap-3 text-green-400;
           }
         }
       }

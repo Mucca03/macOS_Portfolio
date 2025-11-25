@@ -13,13 +13,14 @@ const Terminal = () => {
 
             <div className="techstack">
                 <p>
-                    <span className="font-bold">@alejandro %</span>
-                    show tech stack
+                    <span className="font-bold">alejandro@portfolio</span>
+                    <span> ~ % </span>
+                    <span>cat skills.sh</span>
                 </p>
 
             <div className ="label">
-                <p className="w-32">Category</p>
-                <p>Technologies</p>
+                <p className="w-32">CATEGORY</p>
+                <p>TECH STACK</p>
             </div>
 
             <ul className="content">
@@ -38,11 +39,11 @@ const Terminal = () => {
 
             <div className="footnote">
                 <p>
-                    <Check className="check" size={20}/> 5 of 5 stacks laoded succesfuly (100%)
+                    <Check className="check" size={20}/> [✓] All skills loaded successfully
                 </p>
 
-                <p className="text-black">
-                    <Flag size={15} fill="black"/> Render time: 6ms
+                <p className="text-green-400">
+                    <Flag size={15} fill="currentColor"/> execution_time: 42ms
                 </p>
             </div>
             </div>

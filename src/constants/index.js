@@ -74,7 +74,7 @@ const dockApps = [
   },
 ];
 
-const blogPosts = [
+/*const blogPosts = [
   {
     id: 1,
     date: "Sep 2, 2025",
@@ -97,32 +97,32 @@ const blogPosts = [
     image: "/images/blog3.png",
     link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
   },
-];
+];*/
 
 const techStack = [
   {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
+    items: ["React.js" /*, "Next.js", "TypeScript"*/],
   },
-  {
+  /*{
     category: "Mobile",
     items: ["React Native", "Expo"],
-  },
+  },*/
   {
     category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["Tailwind CSS" /*, "Sass"*/, "CSS"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Node.js", "Express" /*, "NestJS", "Hono"*/],
   },
   {
     category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
+    items: ["mySQL", "PostgreSQL"],
   },
   {
     category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    items: ["Git", "GitHub" /*, "Docker"*/],
   },
 ];
 
@@ -208,7 +208,7 @@ export {
   navLinks,
   navIcons,
   dockApps,
-  blogPosts,
+  //blogPosts,
   techStack,
   socials,
   photosLinks,
