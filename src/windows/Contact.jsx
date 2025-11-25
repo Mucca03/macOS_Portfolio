@@ -15,8 +15,8 @@ const Contact = () => {
                 className="w-20 rounded-full"/>
 
                 <h3>Let's Connect</h3>
-                <p>Got an idea? A bug to squash? Or just wanna tech talk?
-                    I'm in.
+                <p>Open to new opportunities, collaborations, and challenging projects.
+                    Contact me anytime.
                 </p>
                 <p>mabernalr12@gmail.com</p>
 
