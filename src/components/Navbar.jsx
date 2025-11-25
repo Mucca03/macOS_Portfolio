@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav>
         <div>
             {/*<img src="/images/archlogo.svg" alt="logo"/>*/}
-            <p className="font-bold">Alejandro's Portfolio</p>
+            <p className="font-bold text-green-400">Alejandro's Portfolio</p>
         </div>
 
         <time>{dayjs().format("ddd MMM D h:mm A")}</time>
