@@ -1,15 +1,17 @@
-# 💻 macOS Portfolio  
-**Interactive macOS-like Desktop Simulation — Built with React**  
+<h2 align='center'> 💻 macOS Portfolio   </h2>
+<div align='center'>
+<p>Interactive macOS-like Desktop Simulation — Built with React</p> 
 
 ![React](https://img.shields.io/badge/React-18+-blue?logo=react)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v3-38bdf8?logo=tailwindcss&logoColor=white)
 ![GSAP](https://img.shields.io/badge/GSAP-Animation-88CE02?logo=greensock&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-Build-fd4d0c?logo=vite&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-success)
+</div>
 
 ---
 
-<img src="assets/desktop.png" width="500">
+<img src="assets/desktop.png">
 
 ## 🍏 About the Project
 
