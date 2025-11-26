@@ -193,7 +193,7 @@ const photosLinks = [
     title: "Favorites",
   },*/
 ];
-
+/*
 const gallery = [
   {
     id: 1,
@@ -211,7 +211,7 @@ const gallery = [
     id: 4,
     img: "/images/edit4.gif",
   },
-];
+];*/
 
 
 const LIBRARY_LOCATION = {
@@ -223,16 +223,21 @@ const LIBRARY_LOCATION = {
   children: [
   {
     id: 1,
-    img: "/images/edit4.gif",
+    img: "/images/edit12.png",
   },
   {
     id: 2,
-    img: "/images/edit3.png",
+    img: "/images/edit2.png",
   },
   {
     id: 3,
-    img: "/images/edit2.png",
+    img: "/images/edit3.png",
   },
+      {
+          id: 4,
+          img: "/images/edit4.gif"
+      }
+
   ],
 };
 
@@ -265,7 +270,7 @@ const PLACES_LOCATION = {
   id: 7,
   type: "memories",
   name: "Custom Icons",
-  icon: "/icons/gicon2.svg",
+  icon: "/icons/file.svg",
   kind: "folder",
   children: [
   {
@@ -290,7 +295,7 @@ const WEBPAGES_LOCATION = {
   id: 8,
   type: "webPages",
   name: "Web designs",
-  icon: "/icons/gicon2.svg",
+  icon: "/icons/gicon4.svg",
   kind: "folder",
   children: [
   {
@@ -305,7 +310,7 @@ export const locationsPhotos = {
   library: LIBRARY_LOCATION,
   memories: MEMORIES_LOCATION,
   places: PLACES_LOCATION,
-  webPages: WEBPAGES_LOCATION,
+  //webPages: WEBPAGES_LOCATION,
 };
 
 export {
@@ -316,7 +321,7 @@ export {
   techStack,
   socials,
   photosLinks,
-  gallery,
+  //gallery,
 };
 
 //LOCATIONS FINDER

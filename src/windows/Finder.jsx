@@ -4,7 +4,6 @@ import WindowWrapper from "#hoc/WindowWrapper";
 import useLocationStore from "#store/location";
 import useWindowStore from "#store/window";
 import clsx from "clsx";
-import { Search } from "lucide-react";
 
 const Finder = () => {
 
@@ -44,7 +43,7 @@ const Finder = () => {
         <>
             <div id="window-header">
                 <WindowControls target="finder" />
-                <Search className="icon"/>
+                <h2>{`${activeLocation.name}`}</h2>
             </div>
 
             <div className="bg-white flex h-full">

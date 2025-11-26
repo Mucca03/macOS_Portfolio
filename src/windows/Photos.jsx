@@ -1,4 +1,3 @@
-import { Mail, Search} from "lucide-react";
 import WindowWrapper from "#hoc/WindowWrapper";
 import WindowControls from "#components/WindowControls";
 import {locationsPhotos} from "#constants";
@@ -8,21 +7,14 @@ import clsx from "clsx";
 
 const Photos = () => {
     const {openWindow} = useWindowStore();
-    const activeLocationPhotos = useLocationStorePhotos((state) => state.activeLocationPhotos);
-    const setActiveLocation = useLocationStorePhotos((state) => state.setActiveLocation);
+    const { activeLocationPhotos, setActiveLocation } = useLocationStorePhotos();
+
 
     return (
         <>
-            <div id="window-header" className="flex items-center justify-between w-full">
-                <div className="flex items-center gap-2">
+            <div id="window-header">
                     <WindowControls target="photos" />
-                    <h2>{`Designs (${activeLocationPhotos.name})`}</h2>
-                </div>
-
-                <div className="flex items-center gap-3 text-gray-500">
-                    <Mail className="icon"/>
-                    <Search className="icon"/>
-                </div>
+                    <h2>Designs</h2>
             </div>
 
 
@@ -32,9 +24,11 @@ const Photos = () => {
 
                     <ul>
                         {Object.values(locationsPhotos).map((item) => (
-                            <li key={item.id} className={clsx(item.type === activeLocationPhotos?.type ? 'active' : 'not-active')}
-                                    onClick={() =>
-                                    setActiveLocation(item)}>
+                            <li
+                                key={item.id}
+                                className={clsx(item.id === activeLocationPhotos.id ? "active" : "not-active")}
+                                onClick={() => setActiveLocation(item)}
+                                >
                                 <img src={item.icon} alt={item.name} />
                                 <p>{item.name}</p>
                             </li>
