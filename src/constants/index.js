@@ -1,3 +1,5 @@
+//Navbar
+
 const navLinks = [
   {
     id: 1,
@@ -34,6 +36,8 @@ const navIcons = [
     img: "/icons/mode.svg",
   },
 ];
+
+//dockApp 
 
 const dockApps = [
   {
@@ -99,6 +103,8 @@ const dockApps = [
   },
 ];*/
 
+//Terminal 
+
 const techStack = [
   {
     category: "Frontend",
@@ -126,6 +132,7 @@ const techStack = [
   },
 ];
 
+//Socials
 const socials = [
   {
     id: 1,
@@ -156,6 +163,8 @@ const socials = [
     link: "https://www.linkedin.com/in/alejandrobernalr/",
   },
 ];
+
+//Librery 
 
 const photosLinks = [
   {
@@ -204,6 +213,101 @@ const gallery = [
   },
 ];
 
+
+const LIBRARY_LOCATION = {
+  id: 5,
+  type: "library",
+  name: "Marketing Graphics",
+  icon: "/icons/gicon1.svg",
+  kind: "folder",
+  children: [
+  {
+    id: 1,
+    img: "/images/edit4.gif",
+  },
+  {
+    id: 2,
+    img: "/images/edit3.png",
+  },
+  {
+    id: 3,
+    img: "/images/edit2.png",
+  },
+  ],
+};
+
+const MEMORIES_LOCATION = {
+  id: 6,
+  type: "memories",
+  name: "Article Thumbnails",
+  icon: "/icons/gicon2.svg",
+  kind: "folder",
+  children: [
+  {
+    id: 1,
+    img: "/images/TPL1.gif",
+  },
+  {
+    id: 2,
+    img: "/images/edit6.gif",
+  },
+  {
+    id: 3,
+    img: "/images/edit7.gif",
+  },
+  {   id: 4, 
+      img: "/images/edit8.gif",
+  }
+  ],
+};
+
+const PLACES_LOCATION = {
+  id: 7,
+  type: "memories",
+  name: "Custom Icons",
+  icon: "/icons/gicon2.svg",
+  kind: "folder",
+  children: [
+  {
+    id: 1,
+    img: "/images/edit1.jpg",
+  },
+  {
+    id: 2,
+    img: "/images/edit9.gif",
+  },
+  {    id: 3,
+    img: "/images/edit10.jpg",
+  },
+  {   id: 4, 
+      img: "/images/edit11.jpeg",
+  }
+  ],
+};
+
+
+const WEBPAGES_LOCATION = {
+  id: 8,
+  type: "webPages",
+  name: "Web designs",
+  icon: "/icons/gicon2.svg",
+  kind: "folder",
+  children: [
+  {
+    id: 1,
+    img: "/images/edit12.png",
+  },
+  ],
+};
+
+//LOCATIONS PHOTOS
+export const locationsPhotos = {
+  library: LIBRARY_LOCATION,
+  memories: MEMORIES_LOCATION,
+  places: PLACES_LOCATION,
+  webPages: WEBPAGES_LOCATION,
+};
+
 export {
   navLinks,
   navIcons,
@@ -215,6 +319,7 @@ export {
   gallery,
 };
 
+//LOCATIONS FINDER
 const WORK_LOCATION = {
   id: 1,
   type: "work",

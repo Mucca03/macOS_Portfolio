@@ -267,10 +267,12 @@ body {
 
     .gallery {
       @apply p-5;
-
+      height: calc(100vh - 80px); /* o la altura de tu ventana */
+      overflow-y: auto;
       ul {
         @apply grid grid-cols-5 grid-rows-5 gap-2.5;
-
+        
+        
         li {
           img {
             @apply size-full object-cover rounded-lg;
