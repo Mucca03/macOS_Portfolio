@@ -47,13 +47,13 @@ const dockAppsPhone = [
         canOpen: true,
     },
     {
-        id: "photos",
+        id: "photosPhone",
         name: "Gallery", // was "Photos"
         icon: "photos.png",
         canOpen: true,
     },
     {
-        id: "contact",
+        id: "contactPhone",
         name: "Contact", // or "Get in touch"
         icon: "contact.png",
         canOpen: true,
@@ -625,11 +625,14 @@ export const locations = {
 const INITIAL_Z_INDEX = 1000;
 
 const WINDOW_CONFIG_PHONE = {
-    photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-    gallery: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-    contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-    finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },   // agregado
-    terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null }, // agregado
+    photosPhone: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    contactPhone: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    resumePhone: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
 
 const WINDOW_CONFIG = {

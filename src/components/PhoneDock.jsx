@@ -1,12 +1,17 @@
 import { dockAppsPhone } from "#constants";
+import useWindowStorePhone from "#store/windowPhone";
 
 const PhoneDock = () => {
+    const { openWindow, closeWindow, windows } = useWindowStorePhone();
 
     const toggleApp = (app) => {
         if (!app.canOpen) return;
 
-        console.log(`${app.name} clicked!`);
-        // ya no abre ventana
+        const win = windows[app.id];
+        if (!win) return;
+
+        if (win.isOpen) closeWindow(app.id);
+        else openWindow(app.id);
     };
 
     return (
@@ -18,8 +23,6 @@ const PhoneDock = () => {
                         className="size-14 flex items-center justify-center dock-icon-phone"
                         onClick={() => toggleApp(app)}
                         disabled={!app.canOpen}
-                        data-tooltip-id="dock-tooltip-phone"
-                        data-tooltip-content={app.name}
                     >
                         <img
                             src={`/images/${app.icon}`}
